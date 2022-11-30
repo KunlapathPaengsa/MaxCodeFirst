@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MaxCodeFirst.DALs.Repositories.Commons;
+using MaxCodeFirst.Models.TablesAndEntities;
 
 namespace MaxCodeFirst.DALs.Repositories.Commands
 {
-    public class StudentCommandRepository
+    public class StudentCommandRepository : Repository<Student>, IStudentCommandRepository
     {
+        public StudentCommandRepository(IDbContext dbContext) : base(dbContext)
+        {
+        }
     }
 }

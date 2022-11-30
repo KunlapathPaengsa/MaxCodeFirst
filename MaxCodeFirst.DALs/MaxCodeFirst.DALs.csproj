@@ -14,4 +14,8 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MaxCodeFirst.Models\MaxCodeFirst.Models.csproj" />
+  </ItemGroup>
+
 </Project>
