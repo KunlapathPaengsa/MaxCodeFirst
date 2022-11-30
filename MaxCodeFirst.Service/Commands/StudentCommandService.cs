@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MaxCodeFirst.Service.Commands
 {
-    internal class StudentCommandService
+    public class StudentCommandService : IStudentCommandService
     {
     }
 }
