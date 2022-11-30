@@ -1,7 +1,7 @@
 ﻿using MaxCodeFirst.Models.TablesAndEntities;
 using Microsoft.EntityFrameworkCore;
 
-namespace MaxCodeFirst.DALs.Context
+namespace MaxCodeFirst.Models.Context
 {
     public class LocalDbContext : DbContext
     {
@@ -15,7 +15,7 @@ namespace MaxCodeFirst.DALs.Context
             optionsBuilder.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=LocalDB;");
         }
         /***************Nuget install SqlServer,Tool,design**************/
-        /***************Add-migration x,update-database**************/
-
+        /*************set startup project is MaxCodeFirst.Models**************/
+        /**********Add-migration initial_table_student,update-database**************/
     }
 }
