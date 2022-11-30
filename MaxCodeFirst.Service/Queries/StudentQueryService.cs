@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MaxCodeFirst.Service.Queries
 {
-    internal class StudentQueryRepository
+    public class StudentQueryService : IStudentQueryService
     {
     }
 }
