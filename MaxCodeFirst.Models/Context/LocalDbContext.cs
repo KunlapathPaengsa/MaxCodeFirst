@@ -5,6 +5,11 @@ namespace MaxCodeFirst.Models.Context
 {
     public class LocalDbContext : DbContext
     {
+        //add constr options
+        public LocalDbContext(DbContextOptions options) : base(options)
+        {
+        }
+
         //inherith from IDbContext
         public DbSet<Student> Students { get; set; }
 
